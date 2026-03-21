@@ -34,7 +34,7 @@ const LandingPage: React.FC = () => {
             />
           </div>
 
-          <div className="mt-1 px-4 w-full flex justify-center z-10">
+          <div className="mt-[-0.5rem] px-4 w-full flex justify-center z-10">
             <img
               src={`${base}/images/promotions.png`}
               alt="Promotion"
