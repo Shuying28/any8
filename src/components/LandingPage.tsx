@@ -4,7 +4,7 @@ const base = process.env.PUBLIC_URL;
 
 const LandingPage: React.FC = () => {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center relative overflow-hidden bg-black">
+    <div className="h-screen w-full flex items-center justify-center relative overflow-hidden bg-black">
       <div
         className="absolute inset-0"
         style={{
@@ -15,7 +15,7 @@ const LandingPage: React.FC = () => {
       />
 
       <div
-        className="relative w-full max-w-[430px] min-h-screen overflow-hidden"
+        className="relative w-full max-w-[430px] h-full overflow-hidden"
         style={{ zIndex: 1 }}
       >
         <img
@@ -25,12 +25,12 @@ const LandingPage: React.FC = () => {
           draggable={false}
         />
 
-        <div className="relative z-10 flex flex-col items-center w-full">
-          <div className="mt-12 px-6 w-full flex justify-center">
+        <div className="relative z-10 flex flex-col items-center w-full h-full">
+          <div className="mt-8 px-6 w-full flex justify-center">
             <img
               src={`${base}/images/any8-logo.png`}
               alt="Any8"
-              className="w-28 object-contain"
+              className="w-24 object-contain"
             />
           </div>
 
@@ -38,30 +38,40 @@ const LandingPage: React.FC = () => {
             <img
               src={`${base}/images/promotions.png`}
               alt="Promotion"
-              className="w-96 object-contain"
+              className="w-72 object-contain"
             />
           </div>
 
-          <div className="w-full mt-[-2.5rem]">
+          <div className="w-full mt-[-2rem] flex-1 min-h-0">
             <img
               src={`${base}/images/character.png`}
               alt="Promotion visual"
-              className="w-full object-contain"
+              className="w-full h-full object-contain object-top"
             />
           </div>
 
-          <div className="w-full pl-8 pr-4 flex flex-col pb-10 mt-[-24px]">
+          <div className="w-full pl-8 pr-4 flex flex-col pb-4 mt-[-24px]">
             <img
               src={`${base}/images/daily-slots.png`}
               alt="Daily Slots 50%"
               className="w-full object-contain animate-scale-pulse cursor-pointer"
-              onClick={() => {}}
+              onClick={() =>
+                window.open(
+                  "https://www.any8.asia/en?type=register&referralCode=R26001703",
+                  "_blank",
+                )
+              }
             />
             <img
               src={`${base}/images/sport-monthly.png`}
               alt="Sport Monthly 200%"
               className="w-full object-contain mt-[-1rem] animate-scale-pulse cursor-pointer"
-              onClick={() => {}}
+              onClick={() =>
+                window.open(
+                  "https://www.any8.asia/en?type=register&referralCode=R26001703",
+                  "_blank",
+                )
+              }
             />
           </div>
         </div>
